@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>MENTAL HEALTH</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+body {
+background-color: #BFA4D0;
+}
+.title {
+font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif", "monospace";
+}
+</style>
+<body>
+
+<div class="w3-content w3-display-container">
+  <p><a href="SWC2353-about.html" title="ABOUT US">ABOUT US</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 <a href="SWC2353-types.html" title="TYPES">TYPES OF MENTAL ILLNESS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 <a href="SWC2353-prevent.html" title="PREVENT">HOW TO PREVENT IT?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 <a href="SWC2353-login.html" title="LOG IN/SIGN UP">LOG IN/SIGN UP</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 <a href="SWC2353-contact.html" title="CONTACT US">CONTACT US</a></p>&nbsp;&nbsp;&nbsp;
+
+  <p> <img class="mySlides" src="picture1-design.png" style="width:100%"> </p>
+  <p> <img class="mySlides" src="picture3-design.png" style="width:100%"> </p>
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+	
+<h1 align="center" class="title"><em><strong>Why Your Mental Health is Important?</strong></strong></em></h1>
+<blockquote>
+  <blockquote>
+    <h5 class="p1" align="justify">Mental health is integral to our overall well-being. It influences how we think, feel, and act in daily life. Good mental health enables us to cope with the stresses of life, form healthy relationships, work productively, and make meaningful contributions to society. Mental health significantly impacts our quality of life. When individuals struggle with mental health issues such as depression, anxiety, or trauma, it can diminish their enjoyment of life and hinder their ability to pursue their goals and aspirations.Prioritizing mental health enables individuals to identify and address potential issues before they escalate into more significant problems. Early intervention and prevention strategies, such as therapy, counseling, and self-care practices, can mitigate the impact of mental health challenges and promote long-term well-being.</h5>
+  </blockquote>
+</blockquote>
+</body>
+</html>
